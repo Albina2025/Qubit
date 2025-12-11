@@ -204,6 +204,15 @@
     gap: 64px; 
 }
 
+.partner-img img {
+    transition: 250ms;
+    transform-origin: center;
+}
+
+.partner-img:hover img{
+    transform: scale(1.15);
+}
+
 
 .partner h3 {
     color: #1C1C1C;
@@ -712,4 +721,13 @@
 .footer-bottom-right p {
     font-size: 13px;
 }
+/* 
+@media (max-width: 1440px) {
+    .wrapper {
+        background-color: aliceblue;
+    }
+}
 
+@media (min-width:) {
+    
+} */
