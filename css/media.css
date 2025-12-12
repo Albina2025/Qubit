@@ -1,0 +1,13 @@
+body {
+    color: red;
+}
+
+div.partner {
+    width: 47.5%;
+}
+
+@media all and (max-width: 768px) {
+    body {
+    color: #04948c;
+}
+}
