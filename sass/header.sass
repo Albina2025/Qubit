@@ -7,9 +7,10 @@
 
 .wrapper 
     max-width: 1480px
-    padding-left: 20px
-    padding-right: 20px
-    margin: 0 auto
+    padding: 0px 20px
+    margin: 0 auto 
+    box-sizing: content-box
+
 
 .html
     font-family: "Roboto", sans-serif
@@ -26,11 +27,15 @@
     height: 70px
     margin: 0 auto
     padding: 0 20px
-
     display: flex
     align-items: center
     justify-content: space-between
+    @media (max-width: 992px)
+        margin: 0px 0px 0px 80px
 
+    @media (max-width: 767px)
+        margin: 0px 0px 0px 40px
+     
 
 
 .logo img 
@@ -47,6 +52,11 @@
     align-items: center
     margin: 0
     padding: 0
+    @media (max-width: 760px) 
+        display: none
+        
+    @media (max-width: 1000px)
+        margin: 0px 20px
 
 
 .nav-menu li 
@@ -64,18 +74,19 @@
     color: #fff
     border-radius: 20px
     border: none
-
     font-family: Roboto
     font-size: 14px
-
     display: flex
     justify-content: center
     align-items: center
-
     cursor: pointer
     transition: 0.2s ease-in-out
-
+    @media (max-width: 823px)
+        max-width: 89px
+        font-size: 14px
+        line-height: 14px
 
 .demo-btn:hover 
     opacity: 0.85
 
+   
