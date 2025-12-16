@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // const demoBtn = document.querySelector('.demo-btn');
 
-    demoBtn.addEventListener('click', () => {
-    alert('Demo button басылды!');
-    });
+    // demoBtn.addEventListener('click', () => {
+    // alert('Demo button басылды!');
+    // });
 
 
     /////////
