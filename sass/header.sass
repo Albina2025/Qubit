@@ -26,19 +26,20 @@
     max-width: 1240px
     height: 70px
     margin: 0 auto
-    padding: 0 20px
+    padding: 0 
     display: flex
     align-items: center
     justify-content: space-between
-    @media (max-width: 992px)
-        margin: 0px 0px 0px 80px
+    @media (max-width: 1200px)
+        margin: 0px 40px 
 
-    @media (max-width: 767px)
-        margin: 0px 0px 0px 40px
+    @media (max-width: 768px)
+        margin: 0px 20px 
      
+.logo
+    max-width: 79px
 
-
-.logo img 
+.logo img  
     height: 24px
     width: auto
     display: block
@@ -47,16 +48,17 @@
 
 .nav-menu 
     list-style: none
-    display: flex
+    display: grid
+    grid-template-columns: repeat(6, 1fr)
     gap: 40px 
     align-items: center
     margin: 0
     padding: 0
-    @media (max-width: 760px) 
+    @media (max-width: 1200px)
+        margin: 0px 20px
+    @media (max-width: 768px) 
         display: none
         
-    @media (max-width: 1000px)
-        margin: 0px 20px
 
 
 .nav-menu li 
@@ -64,6 +66,8 @@
     font-size: 14px
     color: #1c1c1c
     cursor: pointer
+    @media (max-width: 1200px)
+        font-size: 12px
 
 
 
@@ -81,10 +85,14 @@
     align-items: center
     cursor: pointer
     transition: 0.2s ease-in-out
-    @media (max-width: 823px)
-        max-width: 89px
+    @media (max-width: 1200px)
+        width: 157px
         font-size: 14px
-        line-height: 14px
+        height: 40px
+    @media (max-width: 768px)
+        width: 157px
+        font-size: 14px
+        height: 40px
 
 .demo-btn:hover 
     opacity: 0.85
