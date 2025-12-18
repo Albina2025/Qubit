@@ -5,27 +5,33 @@
     padding: 40px 0
     font-family: Roboto
     @media (max-width: 768px) 
-        padding: 45px 0
+        padding: 45px 20px
 
 
 .footer-container
     width: 100%
-    max-width: 1154px
-    margin: auto
+    margin: 0 auto
+    padding: 0  143px
     display: flex
     flex-direction: column
     gap: 60px
+    @media (max-width: 1024px)
+        padding: 45px 20px
+
+    @media (max-width: 768px)
+        gap: 40px
 
 
 .footer-top
-    width: 100%
-    height: 310px
+    max-width: 1154px
+    flex-wrap: wrap 
     display: flex
-    gap: 383px
-    justify-content: space-between
+    border: 1px solid blue
     align-items: flex-start
-
-
+    justify-content: space-between
+    gap: 383.25px
+    @media (max-width: 768px)
+        flex-direction: column
 
 
 .footer-columns
@@ -33,17 +39,27 @@
     height: 288px
     display: flex
     gap: 40px
+    @media (max-width: 768px)
+        flex-direction: column
+        gap: 40px
+        max-width: 155px
+
 
 .footer-column
     display: flex
     flex-direction: column
     gap: 15px
-    width: 155px
-    height: 288px
+    @media (max-width: 768px)
+        font-size: 13px
+        line-height: 18.2px
+
 
 .first
     width: 155.26px
     height: 21px
+    @media (max-width: 768px)
+        width: 100%
+        height: auto
 
 
 .footer-column h3,
@@ -64,14 +80,22 @@
 .footer-top-right
     display: flex
     flex-direction: column
-    gap: 15px
-    width: 192.25px
-    height: 204px
+    gap: 16px
+    width: 100%
+    max-width: 192.25px
+    border: 1px solid red
+    @media (max-width: 768px)
+        max-width: 208.06px
+        padding: 2px 0
+
 
 
 .social-media
     display: flex
     gap: 30px
+    @media (max-width: 768px)
+        justify-content: flex-start
+        gap: 20px
 
 
 .social-media img
@@ -85,10 +109,16 @@
     display: flex
     align-items: center
     gap: 456px
+    @media (max-width: 768px)
+        flex-direction: column
+        gap: 20px
+        align-items: center
 
 
 .footer-logo
     width: 25px
+    @media (max-width: 768px)
+        display: none
 
 
 .footer-bottom-right
@@ -96,12 +126,22 @@
     align-items: center
     flex-direction: column
     gap: 20px
+    @media (max-width: 768px)
+        width: 100%
+        align-items: center
+        flex-direction: column
+        gap: 10px
 
 
 .footer-bottom-right img
     width: 70px
+    @media (max-width: 768px)
+        width: 50px
 
 
 .footer-bottom-right p
     font-size: 13px
+    @media (max-width: 768px)
+        font-size: 12px
+        text-align: center
 

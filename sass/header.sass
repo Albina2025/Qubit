@@ -5,11 +5,13 @@
     box-sizing: border-box
 
 
+
+
 .wrapper 
     max-width: 1480px
     padding: 0px 20px
     margin: 0 auto 
-    box-sizing: content-box
+    box-sizing: border-box
 
 
 .html
@@ -19,7 +21,8 @@
     width: 100%
     background: #fff
     border-bottom: 1px solid rgba(0, 0, 0, 0.05)
-
+    position: relative
+    z-index: 100
 
 
 .container 
@@ -55,14 +58,13 @@
     margin: 0
     padding: 0
     @media (max-width: 1200px)
-        margin: 0px 20px
+        gap: 30px
     @media (max-width: 768px) 
         display: none
         
 
 
 .nav-menu li 
-    font-family: Roboto, sans-serif
     font-size: 14px
     color: #1c1c1c
     cursor: pointer
@@ -78,23 +80,18 @@
     color: #fff
     border-radius: 20px
     border: none
-    font-family: Roboto
     font-size: 14px
     display: flex
     justify-content: center
     align-items: center
     cursor: pointer
     transition: 0.2s ease-in-out
-    @media (max-width: 1200px)
-        width: 157px
-        font-size: 14px
-        height: 40px
+    &:hover
+        opacity: 0.85
     @media (max-width: 768px)
-        width: 157px
+        width: 150px
         font-size: 14px
-        height: 40px
+        height: 38px
 
-.demo-btn:hover 
-    opacity: 0.85
 
    
